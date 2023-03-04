@@ -104,11 +104,6 @@
       "id": 5,
       "nombre": "Pedro Gomez",
       "telefono": "567-890-1234"
-    },
-    {
-      "id": 6,
-      "nombre": "Laura Sanchez",
-      "telefono": "678-901-2345"
     }
   ],
   "viajes": [
