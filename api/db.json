@@ -104,6 +104,11 @@
       "id": 5,
       "nombre": "Pedro Gomez",
       "telefono": "567-890-1234"
+    },
+    {
+      "nombre": "jesusita",
+      "telefono": "21313",
+      "id": 6
     }
   ],
   "viajes": [
@@ -144,7 +149,7 @@
       "origen": "Bogota",
       "destino": "Medellin",
       "valor": 20000,
-      "estado": false,
+      "estado": true,
       "id": 4
     },
     {
