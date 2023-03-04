@@ -4,7 +4,8 @@ import client from "./client";
 export const getPasajeros = async () => {
   const url = `/pasajeros`;
   const { data } = await client.get(url);
-  return data;
+  console.log(data);
+  return data.pasajeros;
 };
 
 export default function usePasajeros() {

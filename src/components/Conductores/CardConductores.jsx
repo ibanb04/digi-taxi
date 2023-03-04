@@ -26,7 +26,6 @@ const StyledSubtitle = styled(Typography)({
 
 const CardConductor = ({
   nombre,
-  avatar,
   descripcion,
   telefono,
   cedula,
@@ -45,7 +44,7 @@ const CardConductor = ({
   return (
     <StyledCard sx={{ marginBottom: 2 }}>
       <CardHeader
-        avatar={<Avatar alt={nombre} src={avatar} />}
+        avatar={<Avatar alt={nombre} src={"sad"} />}
         title={nombre}
         subheader={<StyledSubtitle variant="body2">{cedula}</StyledSubtitle>}
         action={<Rating name="read-only" value={rating} readOnly />}

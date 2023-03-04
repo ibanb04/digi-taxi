@@ -2,16 +2,9 @@ import { useQuery } from "react-query";
 import client from "./client";
 
 export const getViajesPasajero = async () => {
-  const url = `/pasajeros/1/viajes`;
+  const url = `/viajes/`;
   const { data } = await client.get(url);
-  const viaje = data.map(async (viaje, indice) => {
-    const { data: conductor } = await client.get(
-      `/conductores/${viaje.conductorId}`
-    );
-    data[indice].conductor = conductor.nombre;
-  });
-  await Promise.all(viaje);
-  return data;
+  return data.viajes;
 };
 
 export default function useViajesPasajero() {

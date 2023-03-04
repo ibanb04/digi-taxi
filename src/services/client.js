@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:3004";
+const baseURL = "https://rest-server-basic-production-bc65.up.railway.app/api";
 
 export default axios.create({
   baseURL,

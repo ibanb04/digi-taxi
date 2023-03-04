@@ -6,8 +6,8 @@ const currentDate = moment().format("YYYY-MM-DD");
 export const crearViajes = async (origen, destino) => {
   const url = `/viajes`;
   const data = {
-    pasajeroId: 1,
-    conductorId: 3,
+    pasajeroId: "6403b9786757a490f84ddcd7",
+    conductorId: "6403b275d20083f8f1b562ed",
     fecha: currentDate,
     origen,
     destino,

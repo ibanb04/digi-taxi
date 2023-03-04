@@ -36,7 +36,7 @@ const ListarViajes = () => {
               />
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>Conductor: {viaje.conductor} </Typography>
+              <Typography>Conductor: {viaje.conductorId.nombre} </Typography>
               <Typography>Fecha : {viaje.fecha}</Typography>
               <Typography>Origen : {viaje.origen}</Typography>
               <Typography>Destino : {viaje.destino}</Typography>

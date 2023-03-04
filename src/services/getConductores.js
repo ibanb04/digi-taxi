@@ -4,7 +4,8 @@ import client from "./client";
 export const getConductores = async () => {
   const url = `/conductores`;
   const { data } = await client.get(url);
-  return data;
+
+  return data.conductores;
 };
 
 export default function useConductores() {

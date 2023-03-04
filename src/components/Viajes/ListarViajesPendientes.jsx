@@ -25,9 +25,10 @@ const ListarViajesPendientes = () => {
       newChecked.splice(currentIndex, 1);
     }
     viaje = { ...viaje, estado: !(checked.indexOf(index) !== -1) };
-    await actualizarViaje(viaje.id, viaje);
+    await actualizarViaje(viaje._id, viaje);
     setChecked(newChecked);
     setCheck(!check);
+    window.location.reload();
   };
 
   return (
@@ -72,7 +73,7 @@ const ListarViajesPendientes = () => {
                     id={labelId}
                     primary={`Viaje ${index + 1} - Origen: ${
                       viaje.origen
-                    } / Destino: ${viaje.destino}`}
+                    } / Destino: ${viaje.destino} - Valor: ${viaje.valor}`}
                   />
                   <Chip
                     label={viaje.estado || check ? "Finalizado" : "Pendiente"}
