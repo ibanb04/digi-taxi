@@ -1,7 +1,7 @@
 {
   "conductores": [
     {
-      "id": "T001",
+      "id": 1,
       "nombre": "Juan Pérez",
       "avatar": "as",
       "cedula": "CC 131233121",
@@ -14,7 +14,7 @@
       "disponible": true
     },
     {
-      "id": "T002",
+      "id": 2,
       "nombre": "María González",
       "avatar": "as",
       "cedula": "CC 123456",
@@ -27,7 +27,7 @@
       "disponible": false
     },
     {
-      "id": "T003",
+      "id": 3,
       "nombre": "Carlos Ramírez",
       "avatar": "as",
       "cedula": "CC 7238498",
@@ -40,7 +40,7 @@
       "disponible": true
     },
     {
-      "id": "T004",
+      "id": 4,
       "nombre": "Ana Torres",
       "avatar": "as",
       "cedula": "CC 124412",
@@ -53,11 +53,11 @@
       "disponible": true
     },
     {
-      "id": "T005",
+      "id": 5,
       "nombre": "Pedro Gómez",
       "avatar": "as",
       "cedula": "CC 1331224",
-      "rating": 4.0,
+      "rating": 4,
       "descripcion": "Siempre dispuesto a ayudar a los pasajeros",
       "telefono": "567-890-1234",
       "email": "pedro.gomez@example.com",
@@ -66,7 +66,7 @@
       "disponible": false
     },
     {
-      "id": "T006",
+      "id": 6,
       "nombre": "Laura Sánchez",
       "avatar": "as",
       "cedula": "CC 4151255",
@@ -77,6 +77,90 @@
       "lat": 4.7095,
       "lng": -74.102174,
       "disponible": true
+    }
+  ],
+  "pasajeros": [
+    {
+      "id": 1,
+      "nombre": "Mario Alvarez",
+      "telefono": "123-456-7890"
+    },
+    {
+      "id": 2,
+      "nombre": "Sandra Lopez",
+      "telefono": "234-567-8901"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos Ramirez",
+      "telefono": "345-678-9012"
+    },
+    {
+      "id": 4,
+      "nombre": "Ana Torres",
+      "telefono": "456-789-0123"
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro Gomez",
+      "telefono": "567-890-1234"
+    },
+    {
+      "id": 6,
+      "nombre": "Laura Sanchez",
+      "telefono": "678-901-2345"
+    }
+  ],
+  "viajes": [
+    {
+      "id": 1,
+      "pasajeroId": 1,
+      "conductorId": 1,
+      "fecha": "2018-01-01 12:00:00",
+      "origen": "Calle 1 # 2 - 3",
+      "destino": "Calle 4 # 5 - 6",
+      "valor": 10000,
+      "estado": true
+    },
+    {
+      "id": 2,
+      "pasajeroId": 1,
+      "conductorId": 2,
+      "fecha": "2018-01-01 12:00:00",
+      "origen": "Calle 12 # 3 - 34",
+      "destino": "Calle 45 # 6 - 7",
+      "valor": 12000,
+      "estado": true
+    },
+    {
+      "id": 3,
+      "pasajeroId": 1,
+      "conductorId": 3,
+      "fecha": "2018-01-01 12:00:00",
+      "origen": "Calle 12 # 3 - 34",
+      "destino": "Kr 45 # 6 - 7",
+      "valor": 20000,
+      "estado": true
+    },
+    {
+      "id": 4,
+      "pasajeroId": 1,
+      "conductorId": 3,
+      "fecha": "2018-01-01 12:00:00",
+      "origen": "Calle 123212",
+      "destino": "Calle 123asd3",
+      "valor": 20000,
+      "estado": true
+    },
+    {
+      "pasajeroId": 1,
+      "conductorId": 3,
+      "fecha": "prueba",
+      "origen": "Bogota",
+      "destino": "Medellin",
+      "valor": 20000,
+      "estado": false,
+      "id": 5
     }
   ]
 }
