@@ -26,7 +26,7 @@ const pages = [
   },
   {
     title: "Viajes",
-    href: "/Viajes",
+    href: "/viajes",
   },
   {
     title: "Pasajeros",

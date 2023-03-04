@@ -6,10 +6,10 @@ import {
   FormControlLabel,
   Switch,
 } from "@mui/material";
-import "./styles.css";
 import { calcularDistancia } from "../../helpers/calcularDistancia";
 import useConductores from "../../services/getConductores";
 import CardConductor from "./CardConductores";
+import Input from "../../helpers/Input";
 
 const Conductores = () => {
   const { data: listaDeTaxistas, isLoading } = useConductores();
@@ -40,7 +40,7 @@ const Conductores = () => {
     listaDeTaxistas.filter(
       (taxista) =>
         (taxista.nombre.toLowerCase().includes(nombreFiltro.toLowerCase()) ||
-          taxista.id.toLowerCase().includes(nombreFiltro.toLowerCase())) &&
+          taxista.cedula.toLowerCase().includes(nombreFiltro.toLowerCase())) &&
         (!disponibilidadFiltro || taxista.disponible) &&
         (!distancia ||
           calcularDistancia(userLat, userLng, taxista.lat, taxista.lng) < 3)
@@ -49,28 +49,24 @@ const Conductores = () => {
   return (
     <>
       <Grid item xs={12}>
-        <Typography variant="h3" color="secondary"gutterBottom>
+        <Typography
+          variant="h3"
+          color="secondary"
+          fontFamily="Inter,"
+          gutterBottom
+        >
           Conductores
         </Typography>
       </Grid>
 
       <Grid item xs={9}>
-        <input
+        <Input
           placeholder="Buscar Conductor, por nombre, cedula o ID"
-          className="input"
-          name="text"
-          type="text"
           value={nombreFiltro}
-          onChange={handleSearch}
+          handleSearch={handleSearch}
         />
       </Grid>
-      <Grid
-        item
-        xs={12}
-        md={3}
-        ml={{ xs: 2, md: 0 }}
-        textAlign={{ xs: "start", md: "right" }}
-      >
+      <Grid item xs={12} md={12} ml={{ xs: 2, md: 2 }}>
         <FormControlLabel
           label={
             <Typography variant="body2" color="secondary">
@@ -88,7 +84,7 @@ const Conductores = () => {
         <FormControlLabel
           label={
             <Typography variant="body2" color="secondary">
-              3 km
+              3 km de distancia
             </Typography>
           }
           control={

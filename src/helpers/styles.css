@@ -1,7 +1,7 @@
 .input {
   background-color: #dfdfdf;
   margin-left: 10px;
-  width: 40%;
+  width: 50%;
   height: 20px;
   padding: 10px;
   /* text-align: center; */
@@ -20,6 +20,6 @@
 
 @media screen and (max-width: 768px) {
   .input {
-    width: 80%;
+    width: 110%;
   }
 }
