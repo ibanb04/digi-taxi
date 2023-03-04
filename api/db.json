@@ -143,24 +143,14 @@
       "estado": true
     },
     {
-      "id": 4,
-      "pasajeroId": 1,
-      "conductorId": 3,
-      "fecha": "2018-01-01 12:00:00",
-      "origen": "Calle 123212",
-      "destino": "Calle 123asd3",
-      "valor": 20000,
-      "estado": true
-    },
-    {
       "pasajeroId": 1,
       "conductorId": 3,
       "fecha": "prueba",
-      "origen": "Bogota",
-      "destino": "Medellin",
+      "origen": "Bogota ",
+      "destino": "cali",
       "valor": 20000,
       "estado": false,
-      "id": 5
+      "id": 4
     }
   ]
 }

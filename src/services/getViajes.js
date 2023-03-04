@@ -11,7 +11,6 @@ export const getViajesPasajero = async () => {
     data[indice].conductor = conductor.nombre;
   });
   await Promise.all(viaje);
-  console.log(data);
   return data;
 };
 
