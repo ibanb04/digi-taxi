@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(login({ correo: email, password: pass }));
-    navigate("/home");
+    navigate("/conductores");
   };
 
   const handlePass = (e) => {

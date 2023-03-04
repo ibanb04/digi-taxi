@@ -146,11 +146,21 @@
       "pasajeroId": 1,
       "conductorId": 3,
       "fecha": "prueba",
-      "origen": "Bogota ",
-      "destino": "cali",
+      "origen": "Bogota",
+      "destino": "Medellin",
       "valor": 20000,
       "estado": false,
       "id": 4
+    },
+    {
+      "pasajeroId": 1,
+      "conductorId": 3,
+      "fecha": "2023-03-04",
+      "origen": "",
+      "destino": "",
+      "valor": 20000,
+      "estado": false,
+      "id": 5
     }
   ]
 }

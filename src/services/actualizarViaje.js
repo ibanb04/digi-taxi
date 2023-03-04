@@ -2,7 +2,7 @@ import client from "./client";
 
 export const actualizarViaje = async (id, viaje) => {
   const url = `/viajes/${id}`;
-  const data = { ...viaje };
+  const { conductor, ...data } = viaje;
 
   try {
     const response = await client.put(url, data);

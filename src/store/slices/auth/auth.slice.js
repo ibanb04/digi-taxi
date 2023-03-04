@@ -4,7 +4,7 @@ const initialState = {
   nombre: "Juan",
   correo: "test1@test.com",
   password: "123456",
-  autenticado: false,
+  autenticado: localStorage.getItem("auth") === "true" ? true : false,
 };
 
 const auth = createSlice({
@@ -16,12 +16,14 @@ const auth = createSlice({
       state.correo = payload.correo;
       state.password = payload.password;
       state.autenticado = true;
+      localStorage.setItem("auth", true);
     },
     logout: (state) => {
       state.nombre = null;
       state.correo = null;
       state.password = null;
       state.autenticado = false;
+      localStorage.setItem("auth", false);
     },
   },
 });

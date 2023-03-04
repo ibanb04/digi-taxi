@@ -5,6 +5,7 @@ import {
   Typography,
   FormControlLabel,
   Switch,
+  Alert,
 } from "@mui/material";
 import Input from "../../helpers/Input";
 import ListarViajes from "./ListarViajes";
@@ -41,7 +42,7 @@ const SolicitarViaje = () => {
           fontFamily="Inter,"
           gutterBottom
         >
-        Viajes
+          Viajes
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6}>
@@ -87,14 +88,9 @@ const SolicitarViaje = () => {
       </Grid>
       {mensaje && (
         <Grid item xs={12}>
-          <Typography
-            variant="h6"
-            color="secondary"
-            fontFamily="Inter,"
-            gutterBottom
-          >
+          <Alert onClose={() => setMensaje("")} severity="success">
             {mensaje}
-          </Typography>
+          </Alert>
         </Grid>
       )}
 

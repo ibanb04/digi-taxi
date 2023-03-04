@@ -1,11 +1,14 @@
 import client from "./client";
+import moment from "moment/moment";
+
+const currentDate = moment().format("YYYY-MM-DD");
 
 export const crearViajes = async (origen, destino) => {
   const url = `/viajes`;
   const data = {
     pasajeroId: 1,
     conductorId: 3,
-    fecha: "prueba",
+    fecha: currentDate,
     origen,
     destino,
     valor: 20000,
