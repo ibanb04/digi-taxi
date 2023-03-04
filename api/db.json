@@ -1,55 +1,82 @@
 {
-  "shop": [
+  "conductores": [
     {
-      "id": 1,
-      "address": "Calle Juan Martín",
-      "type": "frutería",
-      "nombre": "Lola Castro Frutas",
-      "latitude": 37.880273,
-      "longitude": -4.792098
+      "id": "T001",
+      "nombre": "Juan Pérez",
+      "avatar": "as",
+      "cedula": "CC 131233121",
+      "rating": 4.5,
+      "descripcion": "Soy un taxista con más de 10 años de experiencia",
+      "telefono": "123-456-7890",
+      "email": "juan.perez@example.com",
+      "lat": 4.661186,
+      "lng": -74.085054,
+      "disponible": true
     },
     {
-      "id": 2,
-      "address": "Calle Pepe Cruz",
-      "type": "supermercado",
-      "nombre": "Ultramarinos Lolo Castro",
-      "latitude": 37.862323,
-      "longitude": -4.77812
+      "id": "T002",
+      "nombre": "María González",
+      "avatar": "as",
+      "cedula": "CC 123456",
+      "rating": 3.2,
+      "descripcion": "Siempre llego a tiempo y ofrezco un servicio amable",
+      "telefono": "234-567-8901",
+      "email": "maria.gonzalez@example.com",
+      "lat": 4.666224,
+      "lng": -74.058109,
+      "disponible": false
     },
     {
-      "id": 3,
-      "address": "Avenida de la Cruz",
-      "type": "pescadería",
-      "nombre": "Pescados El Boquerón",
-      "latitude": 37.856273,
-      "longitude": -4.776992
-    }
-  ],
-  "products": [
-    {
-      "id": 1,
-      "name": "manzanas",
-      "shopId": 1
+      "id": "T003",
+      "nombre": "Carlos Ramírez",
+      "avatar": "as",
+      "cedula": "CC 7238498",
+      "rating": 4.8,
+      "descripcion": "Conducir es mi pasión y me encanta ayudar a los demás",
+      "telefono": "345-678-9012",
+      "email": "carlos.ramirez@example.com",
+      "lat": 4.643945,
+      "lng": -74.105157,
+      "disponible": true
     },
     {
-      "id": 2,
-      "name": "peras",
-      "shopId": 1
+      "id": "T004",
+      "nombre": "Ana Torres",
+      "avatar": "as",
+      "cedula": "CC 124412",
+      "rating": 4.2,
+      "descripcion": "Ofrezco un servicio rápido y seguro",
+      "telefono": "456-789-0123",
+      "email": "ana.torres@example.com",
+      "lat": 4.671527,
+      "lng": -74.057746,
+      "disponible": true
     },
     {
-      "id": 3,
-      "name": "escoba",
-      "shopId": 2
+      "id": "T005",
+      "nombre": "Pedro Gómez",
+      "avatar": "as",
+      "cedula": "CC 1331224",
+      "rating": 4.0,
+      "descripcion": "Siempre dispuesto a ayudar a los pasajeros",
+      "telefono": "567-890-1234",
+      "email": "pedro.gomez@example.com",
+      "lat": 4.648706,
+      "lng": -74.105459,
+      "disponible": false
     },
     {
-      "id": 4,
-      "name": "detergente",
-      "shopId": 2
-    },
-    {
-      "id": 12,
-      "name": "test",
-      "shopId": 1
+      "id": "T006",
+      "nombre": "Laura Sánchez",
+      "avatar": "as",
+      "cedula": "CC 4151255",
+      "rating": 4.7,
+      "descripcion": "Cuido de cada detalle para brindar un servicio ",
+      "telefono": "678-901-2345",
+      "email": "laura.sanchez@example.com",
+      "lat": 4.7095,
+      "lng": -74.102174,
+      "disponible": true
     }
   ]
 }

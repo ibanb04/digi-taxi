@@ -1,7 +1,7 @@
 .input {
   background-color: #dfdfdf;
   margin-left: 10px;
-  width: 30%;
+  width: 40%;
   height: 20px;
   padding: 10px;
   /* text-align: center; */
@@ -16,4 +16,10 @@
   box-shadow: -3px -3px 15px rgb(63, 65, 65);
   transition: 0.1s;
   transition-property: box-shadow;
+}
+
+@media screen and (max-width: 768px) {
+  .input {
+    width: 80%;
+  }
 }

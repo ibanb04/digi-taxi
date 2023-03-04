@@ -137,7 +137,7 @@ function NavBar() {
                 onClose={handleCloseUserMenu}
               >
                 <MenuItem onClick={() => navigate("/home")}>
-                  <Typography textAlign="center">Perfil </Typography>
+                  <Typography textAlign="center">Ajustes de cuenta </Typography>
                 </MenuItem>
                 <Divider />
                 <MenuItem onClick={handleLogout}>
@@ -235,7 +235,7 @@ function NavBar() {
               onClose={handleCloseUserMenu}
             >
               <MenuItem onClick={() => navigate("/home")}>
-                <Typography textAlign="center">Perfil </Typography>
+                <Typography textAlign="center">Ajustes de cuenta </Typography>
               </MenuItem>
               <Divider />
               <MenuItem onClick={handleLogout}>
