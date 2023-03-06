@@ -7,6 +7,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { crearPasajero } from "../../services/crearPasajero";
+import AddIcon from "@mui/icons-material/Add";
 
 const CrearPasajero = () => {
   const [open, setOpen] = React.useState(false);
@@ -36,8 +37,13 @@ const CrearPasajero = () => {
   };
 
   return (
-    <div>
-      <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+    <>
+      <Button
+        startIcon={<AddIcon />}
+        variant="contained"
+        color="secondary"
+        onClick={handleClickOpen}
+      >
         Nuevo Pasajero
       </Button>
       <Dialog open={open} onClose={handleClose}>
@@ -76,7 +82,7 @@ const CrearPasajero = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </>
   );
 };
 

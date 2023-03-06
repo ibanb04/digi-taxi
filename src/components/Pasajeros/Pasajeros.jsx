@@ -49,7 +49,11 @@ const Pasajeros = () => {
         item
         xs={12}
         md={3}
-        sx={{ display: "flex", justifyContent: "flex-end" }}
+        sx={{
+          display: "flex",
+          ml: { xs: 1, md: 0 },
+          justifyContent: { md: "flex-end" },
+        }}
       >
         <CrearPasajero />
       </Grid>

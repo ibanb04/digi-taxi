@@ -11,6 +11,7 @@ import Input from "../../helpers/Input";
 import ListarViajes from "./ListarViajes";
 import ListarViajesPendientes from "./ListarViajesPendientes";
 import { crearViajes } from "../../services/crearViajes";
+import AddIcon from "@mui/icons-material/Add";
 
 const SolicitarViaje = () => {
   const [origen, setOrigen] = useState("");
@@ -63,8 +64,11 @@ const SolicitarViaje = () => {
       </Grid>
       <Grid item xs={12}>
         <Button
+          sx={{ ml: { xs: 1, md: 0 } }}
           onClick={handleSubmit}
           type="submit"
+        startIcon={<AddIcon />}
+
           variant="contained"
           color="primary"
         >
